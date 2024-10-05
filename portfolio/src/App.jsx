@@ -2,14 +2,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home"; // Ensure the path is correct
-import About from "./pages/About"; // Example additional page
+import Articles from "./pages/Articles"; // Example additional page
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} /> {/* Additional route example */}
+        <Route path="/" element={<Articles />} />
+        <Route path="/Articles" element={<Articles/>} /> {/* Additional route example */}
         {/* Add other routes here */}
       </Routes>
     </Router>
