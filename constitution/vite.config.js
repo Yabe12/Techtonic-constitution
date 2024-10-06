@@ -4,10 +4,13 @@ import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react()],  // React plugin for Vite
   css: {
     postcss: {
-      plugins: [tailwindcss, autoprefixer],
+      plugins: [tailwindcss, autoprefixer],  // PostCSS plugins (Tailwind CSS and autoprefixer)
     },
+  },
+  build: {
+    outDir: 'dist',  // Set your custom output directory for the build
   },
 });
