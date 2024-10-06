@@ -6,14 +6,10 @@ import Articles from "./pages/articlesPage"; // Example additional page
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Articles />} />
-        <Route path="/Articles" element={<Articles />} />{" "}
-        {/* Additional route example */}
-        {/* Add other routes here */}
-      </Routes>
-    </Router>
+   <>
+   <Home/>
+   <Articles/>
+   </>
   );
 };
 
