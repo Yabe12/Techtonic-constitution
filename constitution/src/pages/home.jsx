@@ -1,7 +1,8 @@
 import React from "react";
 import myImage from './../assets/a.png'; 
+import { FaUserShield } from "react-icons/fa";
 import icon from './../assets/b.png'
-const App = () => {
+const Home = () => {
   return (
     <div className="flex  ">
       {/* Container to control the layout */}
@@ -52,6 +53,7 @@ const App = () => {
         </div>
       </div>
     </div>
+ 
     </div>
    
 
@@ -60,4 +62,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

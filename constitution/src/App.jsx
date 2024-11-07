@@ -1,6 +1,6 @@
 // src/App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Admin from "./pages/adminPage";
 import Home from "./pages/home"; // Ensure the path is correct
 import Articles from "./pages/articlesPage"; // Example additional page
 
@@ -9,6 +9,7 @@ const App = () => {
    <>
    <Home/>
    <Articles/>
+   <Admin/>
    </>
   );
 };
