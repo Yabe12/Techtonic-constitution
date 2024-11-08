@@ -7,7 +7,7 @@ import dotenv from 'dotenv';  // Import dotenv
 // Load environment variables manually
 dotenv.config();  // This will load the variables from .env into process.env
 
-console.log('VITE_ADMIN_PASSWORD in vite.config.js:', process.env.VITE_ADMIN_PASSWORD);  // Log to check if the variable is loaded
+console.log('VITE_ADMIN_PASSWORD in vite.config.js:', process.env.pass);  // Log to check if the variable is loaded
 
 export default defineConfig({
   plugins: [react()],
@@ -20,6 +20,6 @@ export default defineConfig({
     outDir: 'dist',
   },
   define: {
-    'import.meta.env.VITE_ADMIN_PASSWORD': JSON.stringify(process.env.VITE_ADMIN_PASSWORD),
+    'import.meta.env.pass': JSON.stringify(process.env.pass),
   },
 });
