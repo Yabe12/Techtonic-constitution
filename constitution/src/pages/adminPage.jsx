@@ -7,7 +7,7 @@ const AdminPage = () => {
   const [password, setPassword] = useState('');
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
 
-  const correctPassword = import.meta.env.VITE_ADMIN_PASSWORD; // Correct password from .env
+  const correctPassword = import.meta.env.pass; // Correct password from .env
 
   console.log("Loaded Password from .env:", correctPassword);  // Log to verify correctPassword
 
